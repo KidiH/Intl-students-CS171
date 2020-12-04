@@ -1,0 +1,261 @@
+.tooltip {
+    position: absolute;
+    text-align: center;
+    /*width: 200px;*/
+    /*height: 28px;*/
+    padding: 5px;
+    font: 13px sans-serif;
+    background: white;
+    border-radius: 5px;
+    border: black;
+}
+
+.tooltip1 {
+    height: 28px;
+}
+
+.d-flex {
+    /*background-image: url("https://ppcc.edu/download_file/view_inline/19858");*/
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.title {
+    background: white;
+    opacity: 0.9;
+    padding: 10px;
+    text-align: center;
+    margin-left: 22%;
+    margin-right: 22%;
+    font-family: 'Poppins';
+}
+
+#intro {
+    /*background-image: url("https://scanews.com/wp-content/uploads/2017/07/innternational-students-usa.jpg");*/
+    /*background-image: url("https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c5ca76131358e2a162e99ee%2F0x0.jpg");*/
+    background: linear-gradient(rgba(0,0, 0,0.3), rgba(0,0,0,0.3)),url("https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c5ca76131358e2a162e99ee%2F0x0.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#heading{
+
+}
+
+div.title {
+    /*background-color: #ffffff;*/
+    background: rgba(100, 10, 10, 0.7);
+    border: 1px solid black;
+    opacity: 0.8;
+}
+
+div.title h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#explanation {
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    width: 30%;
+    text-align: center;
+    color: #666;
+    z-index: -1;
+}
+
+
+#percentage {
+    font-size: 2em;
+}
+
+#sequence {
+    margin-left: 15px;
+}
+
+.body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    margin-right: 15%;
+}
+
+.legendActorChord {
+    color: #000000;
+    overflow: visible; !important
+
+}
+
+.info{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.tdActorChord{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+td{
+    font-size: 20px;
+}
+
+.axis {
+    font-size: 15px;
+}
+
+.axisLabel {
+    font-size: 15px;
+    font-family: 'Montserrat';
+}
+
+button {
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.total {
+    font-family: 'Montserrat';
+}
+
+.mymap {
+    font-family: 'Montserrat';
+}
+
+.income {
+    font-family: 'Montserrat';
+}
+
+.radio {
+    font-family: 'Montserrat';
+}
+
+.solution {
+    font-family: 'Montserrat';
+    margin-left: 80px;
+}
+
+.map-title {
+    font-size: 18px;
+}
+
+.notes {
+    font-size: 12px;
+    color: #868e96;
+    font-style: italic;
+}
+
+.maptext {
+    margin-top: 80%;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.incometext {
+    padding: 0px;
+    margin-top: 7%;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#radial1{
+    margin-top: 10%;
+    margin-left: 50px;
+    font: 10px sans-serif;
+}
+.tooltip-radial{
+    position: absolute;
+    text-align: center;
+    /*width: 200px;*/
+    /*height: 28px;*/
+    padding: 5px;
+    font: 13px sans-serif;
+    background: white;
+    border-radius: 5px;
+    border: black;
+}
+
+/*edited*/
+/*#sunburst{*/
+/*    width: 960px;*/
+/*    height: 700px;*/
+/*}*/
+
+/*edited*/
+.quotesSections {
+    width: 600px;
+    color: white;
+    margin: 10% auto;
+    left: 0;
+    right: 0;
+}
+
+/*edited*/
+.quote {
+    text-align: justify;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*edited*/
+#quotesSection1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../data/image.jpg');
+    /*background-image: url('data/image.jpg');*/
+
+    position: relative;
+    color: white;
+    /*-webkit-filter: grayscale(100%); !* Chrome, Safari, Opera *!*/
+    /*filter: grayscale(100%);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*edited*/
+#quotesSection2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../data/image2.jpg');
+    /*background-image: url('data/image.jpg');*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    /*-webkit-filter: grayscale(100%); !* Chrome, Safari, Opera *!*/
+    /*filter: grayscale(100%);*/
+}
+
+/*edited*/
+#quotesSection3 {
+    background: linear-gradient(rgba(0,0, 0,0.7), rgba(0,0,0,0.7)),url('../data/image3.jpg');
+    /*background-image: url('data/image.jpg');*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: black;
+    /*-webkit-filter: grayscale(100%); !* Chrome, Safari, Opera *!*/
+    /*filter: grayscale(100%);*/
+}

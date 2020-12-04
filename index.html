@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Dream Seekers</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+
+	<script type="text/javascript">
+		//using document ready...
+		$(document).ready(function(){
+
+			//initialising fullpage.js in the jQuery way
+			$('#fullpage').fullpage({
+				// sectionsColor: ['white', 'white', 'white', '#fec401'],
+				navigation: true,
+				slidesNavigation: true,
+			});
+
+			// calling fullpage.js methods using jQuery
+			$('#moveSectionUp').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSectionUp();
+			});
+
+			$('#moveSectionDown').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSectionDown();
+			});
+		});
+
+	</script>
+
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section" id="intro">
+			<div id="heading" class="align-self-center title">
+				<h1>INTERNATIONAL STUDENTS IN THE US</h1>
+			</div>
+		</div>
+		<!-- Total Number of students -->
+		<div class="section total">
+			<div class="row justify-content-center" style="height: 80vh; padding: 0;">
+				<div class="col-md-8">
+					<div class="row justify-content-around" style="height: 80vh; margin: 20px;">
+						<h5>According to <a href="https://opendoorsdata.org/data/international-students/all-places-of-origin/">opendoorsdata.org</a>, as of 2019, there are <b>1,075,496</b> international students studying in the United States, a <b>3968.76%</b> increase since 1949, with only <b>26,433</b> international students.</h5>
+						<button id="replay">Click to see the trend</button>
+						<div id="TotalNumber" style="height: 90%; width:100%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- QUOTE 1 -->
+		<div class="section" id="quotesSection1">
+			<div class="containervertical">
+
+				<div class="quotesSections">
+
+					<p class="quote">“Nearly a million international students are studying in the US. <br> At some universities, 20% of the freshman class is now from overseas.”</p>
+					<p class="quoteAuthor">—  Patrick Barta, Reporter at <a href="http://graphics.wsj.com/international-students/" class="whitelink" target="_blank"> The Wall Street Journal </a> 2020 </p>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Map -->
+		<div class="section mymap">
+			<div class="row justify-content-center" style="height: 8vh; padding-top: 20px;">
+				<h3><b>Total Number of International Student from 244 Countries between 1949 and 2018</b></h3>
+			</div>
+			<div class="row justify-content-center" style="height: 92vh;">
+				<div class="col-2">
+					<div class="row justify-content-center maptext" style="height: 100%; padding-left: 0vh; padding-bottom: 1vh; padding-right: 1vh; padding-top: 0vh">
+						<p id="top10"></p>
+					</div>
+				</div>
+				<div class="col-10">
+					<div class="row justify-content-center" id="Map" style="height: 80%; width:100%;"></div>
+					<div class="row justify-content-center" id="Brush" style="height: 20%; width:100%;"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- QUOTE 2 -->
+		<div class="section" id="quotesSection2">
+			<div class="containervertical">
+
+				<div class="quotesSections">
+
+					<p class="quote">“Despite accounting for over 30% of the world’s tertiary school eligible population, international students from Africa and South America are disproportionately under admitted into higher education institutions in the US.” </p>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Sunburst -->
+		<!-- Sunburst -->
+		<div class="section">
+			<div class="row justify-content-around" style="margin: 20px;">
+				<h2 class="heading"> The Origin Distribution of Intl Students and What they Choose to Study</h2>
+			</div>
+			<table class="legendActorChord">
+				<tr>
+					<td>
+					</td>
+					<td class="body">
+						<button type="button" class="btn btn-light btn-lg" disabled><b>?</b></button>
+						Are Intl. students of different origins equally represented?
+					</td>
+				</tr>
+			</table>
+
+			<div class="row" style="height: 70vh">
+				<div class="col-6">
+					<div id="sun" style="height: 100%; width:100%;">
+						<div id="sequence"></div>
+						<div id="sunburst" style="height:80%; width:100%;"></div>
+						<div id="explanation" style="visibility: hidden;">
+							<span id="percentage"></span><br/>
+							<span id="content"></span><br/>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<h2 class="heading">Majors</h2>
+					<br>
+					<p class="body">As the number of international undergraduate students have increased by 120%
+						over the past two decades, clear <b>patterns</b> in majors/concentrations have began to emerge.</p>
+					<p class="body">For instance, on average <b class="data">52%</b> of international students major in <b>STEM fields</b>.</p>
+					<br>
+					<h2 class="heading">Demography</h2>
+					<br>
+					<p class="body"> Even though <b>120 million</b> students from Africa have completed their secondary education,
+						African international students account for <b>at most 3%</b> of the total international students in the US on any given year.</p>
+					<p class="body">Thus, it's clear that there are major <b>discrepancies in recruiting efforts and resources available</b> to
+						students from developing continents and countries. </p>
+
+				</div>
+			</div>
+			<table class="legendActorChord" style="margin-top: 0%">
+				<td>
+					<tr>
+						<td><img class="tdActorChord" src="data:image/jpeg;base64,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">
+						<td class="info">Learn about the distribution of international students and the common majors with the sunburst diagram. <br>
+							Hover over the arcs for details on the segment. <br>
+							Click on the arcs for a more specific report visualization.
+						</td>
+					</tr>
+				</td>
+			</table>
+			<br>
+
+		</div>
+
+		<!-- QUOTE 3 -->
+		<div class="section" id="quotesSection3">
+			<div class="containervertical">
+
+				<div class="quotesSections">
+
+					<p class="quote">"In 2019 <b>57%</b> of international students rely on Personal and Family Funds to pay for their studies."</p>
+					<p class="quoteAuthor"><a href="https://opendoorsdata.org/data/international-students/international-students-primary-source-of-funding/" class="whitelink" target="_blank"> Open Doors Data </a> Nov 16, 2020 </p>
+
+				</div>
+			</div>
+		</div>
+
+		<!--radio-->
+		<div class="section radio">
+			<h2 class="heading justify-content-center"> Funding Sources of International Students Over the Years </h2>
+			<div class="row justify-content-center" style="height: 100vh; padding: 5px;">
+                <div class="col-5">
+					<div class="row justify-content-center maptext" style="height: 100%; padding-left: 0vh; padding-bottom: 1vh; padding-right: 1vh; padding-top: 0vh; margin-top: 50%">
+						<h5>From 1999 to 2018, there has been a continuous growth in the total amount of students studying in the United States. We could see that the education funding for a majority of these international students came from their personal or family. Another big source of funding is from the college/university which account for around the 16-20% mark throughout the different years. One of the trends that is interesting to see is the growth of employment as funding for education. It went from several percent to a huge jump to 10-20% in recent years.
+						</h5>
+					</div>
+				</div>
+				<div class="col-7">
+					<div id="radial1" style="height: 100%; width:100%;"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section income">
+			<div class="row justify-content-center" style="height: 15vh; padding-top: 20px;">
+				<h3><b>Relative Number of International Students in 2012 vs. Median Household Income</b></h3>
+				<h4>More international students come from higher income countries</h4>
+			</div>
+			<div class="row justify-content-center" style="height: 85vh; padding: 5px;">
+				<div class="col-9">
+					<div id="MapIncome" style="height: 100%; width:100%;"></div>
+				</div>
+				<div class="col-3">
+					<div class="row justify-content-center incometext" style="height: 100%; padding-left: 0vh; padding-bottom: 1vh; padding-right: 1vh; padding-top: 0vh">
+						<p id="NumTail"><b style="font-size: 20px;">Countries with the lowest Household Income also have the least amount of International Students: </b></p>
+						<p><b style="font-size: 20px;">As shown earlier, most international students support themselves. Families from low income countries simply can't afford the high tuitions for U.S. universities. Compared to more developed countries, these countries also have less resources available. </b></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- QUOTE 4 -->
+<!--		<div class="section">-->
+<!--			<h1>Quote 4</h1>-->
+<!--		</div>-->
+
+		<div class="section solution">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/zKrToqjeJT8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<h1>Next Actions</h1>
+			<div class="row">
+				<div class="col">
+					<h4>Even with the ever-increasing number of students around the
+						world attending colleges in the United States in the past 2 decades,
+						we could see that the cost is still a huge problem for a majority of
+						the people in the world. We could make a difference in someone else’s life through a
+						small contribution to organizations helping the international students in need:  </h4>
+				</div>
+				<div class="col">
+					<h4><a href="https://www.onetoworld.org/Support-Us/Donate-Online.aspx">The One to World Program</a>
+					</h4>
+					<h4><a href="https://ww2.aauw.org/donate-gift-new/">American Association of University Women</a></h4>
+					<h4>	<a href="https://www.iie.org/Donate/Donation%20Form">The Institute of International Education</a></h4>
+					<h4><a href="https://www.ef.edu/host-family/hosting-international-students">Or host an international student</a>
+					</h4>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- - - - - - - - - - - - >
+	<    Load JS libraries     >
+	<- - - - - - - - - - - - -->
+
+	<!-- Jquery -->
+	<script>
+
+	</script>
+
+	<!-- BOOTSTRAP -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="js/d3-scale-radial.js"></script>
+	<script src="js/radial.js"></script>
+	<script src="js/lollipop.js"></script>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	<script src="https://d3js.org/topojson.v2.min.js"></script>
+	<script src="https://d3js.org/d3-geo.v1.min.js"></script>
+	<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+	<!-- PAGE SETUP -->
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+
+	<!-- OWN JS -->
+	<script src="js/main.js"></script>
+	<script src="js/TotalNum.js"></script>
+	<script src="js/Map.js"></script>
+	<script src="js/Brush.js"></script>
+	<script src="js/sunburst.js"></script>
+	<script src="js/income.js"></script>
+
+
+
+
+
+</body>
+</html>
